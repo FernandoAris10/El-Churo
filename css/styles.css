@@ -1,0 +1,228 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #99eee7 !important; /* Celeste claro */
+    color: #333;
+}
+
+
+a {
+    color: #dc3545; /* Rojo */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c82333; /* Rojo más oscuro al pasar el cursor */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #343a40; /* Gris oscuro */
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff; /* Blanco */
+}
+
+.navbar-brand .logo {
+    width: 70px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Blanco */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8; /* Azul claro */
+}
+
+/* Encabezados y texto */
+h1, h2, h3, h4, h5 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Azul */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #28a745; /* Verde */
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #dc3545; /* Rojo */
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff; /* Blanco */
+    background-color: #dc3545; /* Rojo */
+    border-color: #dc3545; /* Rojo */
+}
+
+.btn-primary:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+    border-color: #bd2130; /* Rojo más oscuro */
+}
+
+/* Tarjetas */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Formularios */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #007bff; /* Azul */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Gris oscuro */
+    color: #fff; /* Blanco */
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #fff; /* Blanco */
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #17a2b8; /* Azul claro */
+    text-decoration: none;
+}
+
+/* Galería */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 992px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+.carousel-custom {
+    max-width: 800px; /* Aumenta el tamaño según tus necesidades */
+    margin: 0 auto; /* Centra el carrusel */
+}
+
+.carousel-custom img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones originales */
+}
+.video-small {
+    width: 400px;  /* Ajusta este valor según tus necesidades */
+    height: 800px;  /* Mantiene la proporción del video */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
